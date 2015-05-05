@@ -2,6 +2,8 @@
 class Prato{
     private $idPrato;
     private $nome;
+    private $imagem;
+            
     
     public function getIdPrato(){
         return $this->idPrato;
@@ -16,6 +18,14 @@ class Prato{
     }
     public function setNome($nome){
         $this->nome = $nome;
+    }
+    
+    public function getImagem(){
+        return $this->imagem;
+    }
+
+    public function setImagem($foto){
+        $this->imagem = $foto;
     }
 }
 

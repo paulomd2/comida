@@ -14,4 +14,5 @@ function seg($var) {
 
 //Constantes de Tabela
 //Tabelas ADMIN
+define("TBL_PRATO",DB_ADMIN.TBL_ADMIN."pratos ");
 define("TBL_USUARIO",DB_ADMIN.TBL_ADMIN."usuarios ");

@@ -11,6 +11,8 @@ function logar(){
     } else {
         $.post('control/usuariosControle.php', {opcao: 'verificaLogin', usuario: usuario, senha: senha},
         function (r) {
+            
+            console.log(r);
             if (r == 0) {
                 $("#usuario").focus();
                 $("#senha").val('');

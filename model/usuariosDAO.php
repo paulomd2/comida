@@ -24,6 +24,21 @@ class UsuarioDAO extends Banco{
         
         $this->fechaConexao();
     }
+    
+    
+    public function listaUsuario($idUsuario){
+        $conexao = $this->abreConexao();
+        
+        $sql =  "
+                SELECT * FROM ".TBL_USUARIO." WHERE idUsuario = ".$idUsuario."
+                ";
+        
+        $banco = $conexao->query($sql);
+        
+        $linha = $banco->fetch_assoc();
+        
+        return $linha;
+    }
 }
 
 $objUsuarioDao = new UsuarioDAO();
